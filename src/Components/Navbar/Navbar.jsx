@@ -5,9 +5,39 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
 
     const list = <>
-        <li><NavLink to='/'>Home</NavLink></li>
-        <li><NavLink to='/donation'>Donation</NavLink></li>
-        <li><NavLink to='/statistics'>Statistics</NavLink></li>
+        <li ><NavLink to='/'
+        
+        style={({ isActive }) => {
+            return {
+              color: isActive ? "#FF444A" : "black",
+              textDecoration: isActive ? "underline" : "none",
+              backgroundColor: isActive ? "white" : "white",
+              fontWeight: isActive ? "bold" : ""
+            };
+          }}
+        >Home</NavLink></li>
+
+        <li><NavLink to='/donation' 
+        style={({ isActive }) => {
+            return {
+              color: isActive ? "#FF444A" : "black",
+              textDecoration: isActive ? "underline" : "none",
+              backgroundColor: isActive ? "white" : "white",
+              fontWeight: isActive ? "bold" : ""
+            };
+          }}
+          >Donation</NavLink></li>
+
+        <li><NavLink to='/statistics'
+        style={({ isActive }) => {
+            return {
+              color: isActive ? "#FF444A" : "black",
+              textDecoration: isActive ? "underline" : "none",
+              backgroundColor: isActive ? "white" : "white",
+              fontWeight: isActive ? "bold" : ""
+            };
+          }}
+        >Statistics</NavLink></li>
     </>
 
     return (

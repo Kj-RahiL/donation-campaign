@@ -7,8 +7,8 @@
       "description": "Track your daily activity and stay fit with this advanced fitness tracker.",
       "price": 490.99,
       "card_bg": "#E3F2FD",
-      "category_bg": "#2196F3",
-      "text_color": "#ffffff"
+      "category_bg": "#0052FF33",
+      "text_color": "#0052FF"
     },
     {
       "id": 2,
@@ -17,9 +17,9 @@
       "category": "Education",
       "description": "Learn web development from scratch with this comprehensive online course.",
       "price": 790.99,
-      "card_bg": "#E8F5E9",
-      "category_bg": "#4CAF50",
-      "text_color": "#000000"
+      "card_bg": "#FF444A26",
+      "category_bg": "#FF444A33",
+      "text_color": "#FF444A"
     },
     {
       "id": 3,
@@ -28,9 +28,9 @@
       "category": "Clothing",
       "description": "Stay stylish and comfortable with this classic denim jacket for men.",
       "price": 590.99,
-      "card_bg": "#FCE4EC",
-      "category_bg": "#E91E63",
-      "text_color": "#000000"
+      "card_bg": "#79C23F26",
+      "category_bg": "#79C23F33",
+      "text_color": "#79C23F"
     },
     {
       "id": 4,
@@ -39,53 +39,54 @@
       "category": "Food",
       "description": "Indulge in the finest gourmet chocolates from around the world.",
       "price": 290.99,
-      "card_bg": "#FFF3E0",
-      "category_bg": "#FFC107",
-      "text_color": "#000000"
+      "card_bg": "#F8714726",
+      "category_bg": "#F8714733",
+      "text_color": "#F87147"
     },
     {
       "id": 5,
+      "img": "https://i.ibb.co/Y2VhjVZ/Food.png",
+      "title": "Organic Green Tea",
+      "category": "Food",
+      "description": "Savor the natural goodness of organic green tea for a healthy lifestyle.",
+      "price": 90.99,
+      "card_bg": "#F8714726",
+      "category_bg": "#F8714733",
+      "text_color": "#F87147"
+    },
+    {
+      "id": 6,
+      "img": "https://i.ibb.co/R3yB916/Clothing.png",
+      "title": "Women's Summer Dress",
+      "category": "Clothing",
+      "description": "Stay cool and stylish this summer with our elegant women's summer dress.",
+      "price": 390.99,
+      "card_bg": "#79C23F26",
+      "category_bg": "#79C23F33",
+      "text_color": "#79C23F"
+    },
+    {
+      "id": 7,
+      "img": "https://i.ibb.co/Zf8cnyj/Education.png",
+      "title": "Language Learning App",
+      "category": "Education",
+      "description": "Master a new language with the help of our interactive language learning app.",
+      "price": 190.99,
+      "card_bg": "#FF444A26",
+      "category_bg": "#FF444A33",
+      "text_color": "#FF444A"
+    },
+    
+    {
+      "id": 8,
       "img": "https://i.ibb.co/bFFst0g/Health.png",
       "title": "Yoga Mat",
       "category": "Health",
       "description": "Enhance your yoga practice with a high-quality and eco-friendly yoga mat.",
       "price": 240.99,
       "card_bg": "#E3F2FD",
-      "category_bg": "#2196F3",
-      "text_color": "#ffffff"
-    },
-    {
-      "id": 6,
-      "img": "https://i.ibb.co/Zf8cnyj/Education.png",
-      "title": "Language Learning App",
-      "category": "Education",
-      "description": "Master a new language with the help of our interactive language learning app.",
-      "price": 190.99,
-      "card_bg": "#E8F5E9",
-      "category_bg": "#4CAF50",
-      "text_color": "#000000"
-    },
-    {
-      "id": 7,
-      "img": "https://i.ibb.co/R3yB916/Clothing.png",
-      "title": "Women's Summer Dress",
-      "category": "Clothing",
-      "description": "Stay cool and stylish this summer with our elegant women's summer dress.",
-      "price": 390.99,
-      "card_bg": "#FCE4EC",
-      "category_bg": "#E91E63",
-      "text_color": "#000000"
-    },
-    {
-      "id": 8,
-      "img": "https://i.ibb.co/Y2VhjVZ/Food.png",
-      "title": "Organic Green Tea",
-      "category": "Food",
-      "description": "Savor the natural goodness of organic green tea for a healthy lifestyle.",
-      "price": 90.99,
-      "card_bg": "#FFF3E0",
-      "category_bg": "#FFC107",
-      "text_color": "#000000"
+      "category_bg": "#0052FF33",
+      "text_color": "#0052FF"
     },
     {
       "id": 9,
@@ -95,8 +96,8 @@
       "description": "Transform your home into a personal gym with this versatile equipment set.",
       "price": 149.99,
       "card_bg": "#E3F2FD",
-      "category_bg": "#2196F3",
-      "text_color": "#ffffff"
+      "category_bg": "#0052FF33",
+      "text_color": "#0052FF"
     },
     {
       "id": 10,
@@ -105,9 +106,9 @@
       "category": "Education",
       "description": "Unleash your creativity with this complete art supplies kit for aspiring artists.",
       "price": 290.99,
-      "card_bg": "#E8F5E9",
-      "category_bg": "#4CAF50",
-      "text_color": "#000000"
+      "card_bg": "#FF444A26",
+      "category_bg": "#FF444A33",
+      "text_color": "#FF444A"
     },
     {
       "id": 11,
@@ -116,9 +117,9 @@
       "category": "Clothing",
       "description": "Upgrade your casual wardrobe with this comfortable and stylish men's shirt.",
       "price": 340.99,
-      "card_bg": "#FCE4EC",
-      "category_bg": "#E91E63",
-      "text_color": "#000000"
+      "card_bg": "#79C23F26",
+      "category_bg": "#79C23F33",
+      "text_color": "#79C23F"
     },
     {
       "id": 12,
@@ -127,9 +128,9 @@
       "category": "Food",
       "description": "Enjoy a variety of fresh, organic fruits with this delightful fruit basket.",
       "price": 390.99,
-      "card_bg": "#FFF3E0",
-      "category_bg": "#FFC107",
-      "text_color": "#000000"
+      "card_bg": "#F8714726",
+      "category_bg": "#F8714733",
+      "text_color": "#F87147"
     }
   ]
   
