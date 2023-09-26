@@ -8,7 +8,7 @@ const DonationDetails = () => {
     const { id } = useParams();
     const idInt = parseInt(id)
     const donation = donations.find(donation => donation.id === idInt)
-
+console.log(donation)
 
     const handleAdd = () => {
         const addDonationArray = []

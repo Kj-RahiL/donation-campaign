@@ -14,6 +14,7 @@ import Statistics from './Components/Statistics/Statistics.jsx';
 import DonationDetails from './Components/DonationDetails/DonationDetails';
 import ErrorElement from './Components/ErorElement/ErrorElement';
 
+
 const router = createBrowserRouter([
   {
     path: "/",

@@ -1,9 +1,14 @@
-.layout-container {
-    background-image: url('your-image-url.jpg'); /* Replace with your image URL */
+.nav-banner-bg {
+    background-image: url('https://i.ibb.co/bRsjjSD/donation.jpg'); 
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    height: 100vh; /* Adjust the height as needed */
+    height: 100vh; 
     display: flex;
     flex-direction: column;
   }
+  
+
+  /* style={{ backgroundImage: 'url(https://i.ibb.co/bRsjjSD/donation.jpg)' }} */
+
+  /* bg-[#FFFFFFF3] opacity-90 */

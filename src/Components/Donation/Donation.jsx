@@ -23,7 +23,7 @@ const Donation = () => {
         }
     }, [])
 
-    console.log(donations)
+    // console.log(donations)
 
 
     return (
