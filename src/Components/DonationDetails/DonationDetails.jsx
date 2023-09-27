@@ -40,17 +40,17 @@ console.log(donation)
 
     return (
         <div >
-            <div className="card bg-base-100 shadow-xl max-w-4xl mx-auto rounded-lg">
-                <figure className=" h-[400px]"><img className="w-full " src={donation.img} alt="Shoes" /></figure>
+            <div className="card bg-base-100 shadow-xl md:max-w-4xl mx-auto rounded-lg ">
+                <figure className=" h-full"><img className="w-full " src={donation.img} alt="Shoes" /></figure>
 
-                <div className="absolute left-0 bottom-0 bg-blend-overlay bg-[#0b0b0b7d]  w-full text-white text-xl font-semibold  px-8 py-6">
+                <div className="absolute left-0  bottom-0 bg-blend-overlay bg-[#0b0b0b7d]  w-full text-white text-xl font-semibold  px-8 py-6">
 
                     <button onClick={handleAdd} className=" bg-[#FF444A] normal-case btn text-white hover:text-gray-900">Donate ${donation.price}</button>
 
                 </div>
             </div>
 
-            <div className="bg-base-100 max-w-4xl mx-auto rounded-lg space-y-2 my-10">
+            <div className="bg-base-100 max-w-4xl mx-auto rounded-lg space-y-2 my-10 p-4">
                 <h2 className=" text-4xl font-semibold">{donation.title}</h2>
                 <p className="text-[#0B0B0BB3]">{donation.description}</p>
             </div>

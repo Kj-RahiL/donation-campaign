@@ -31,7 +31,7 @@ const Donation = () => {
             {
                 noFound ? <p className="h-[80vh] flex justify-center items-center text-4xl font-semibold">{noFound}</p> :
                     <>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-20 mx-10 md:mx-32">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-20 mx-2 md:mx-10 lg:mx-32">
                             {
                                 isShow ? donations.map(item => <DonationCart key={item.id} item={item}></DonationCart>) : 
                                 donations.slice(0, 4).map(item => <DonationCart key={item.id} item={item}></DonationCart>)
