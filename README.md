@@ -1,8 +1,8 @@
-# React + Vite
+# React Donation Campaign
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Describe to my Project features..!!
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- This is react router project. In this projects style for used tailwind CSS and  card for DaisyUi. This project have 4 catagories 12 data for donation.
+- In the navbar have logo and 3 menu items are home, donation and statistics. 
+- Home items is showing data to donation. click card we see donation details. If we donate we will see it's added in donation menu. 
+- Statistics menu is a pie chart. In 12 data how would we donate item it's see percent.
