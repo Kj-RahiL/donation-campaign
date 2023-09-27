@@ -5,17 +5,27 @@ import { PieChart, Pie, Cell } from "recharts";
 const Statistics = () => {
 
     const [donation, setDonation] = useState([]);
+    const [yourDonation, setYourDonation] = useState(0)
     useEffect(() => {
         fetch('donation.json')
             .then(res => res.json())
             .then(data => setDonation(data.length))
     }, [])
 
-    const donationItem = JSON.parse(localStorage.getItem('donation'))
-    const yourDonation = donationItem.length
+    useEffect(()=> {
+        const donationItem = JSON.parse(localStorage.getItem('donation'))
+        if (donationItem !== null) {
+                setYourDonation(donationItem.length)
+            }
+
+    },[])
 
     
     const totalDonation = donation - yourDonation
+    console.log(donation)
+    console.log(yourDonation)
+
+    
     console.log(totalDonation)
 
 
@@ -27,7 +37,7 @@ const Statistics = () => {
     const COLORS = ["#FF444A", "#00C49F"];
 
     const RADIAN = Math.PI / 180;
-    const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent, index }) => {
+    const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent }) => {
         const radius = innerRadius + (outerRadius - innerRadius) * 0.5;
         const x = cx + radius * Math.cos(-midAngle * RADIAN);
         const y = cy + radius * Math.sin(-midAngle * RADIAN);
