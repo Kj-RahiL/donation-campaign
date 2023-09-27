@@ -1,10 +1,16 @@
+import { useState } from "react";
 
 
-const Banner = () => {
+const Banner = (props) => {
+const [value, setValue] = useState('')
 
-    const handleSubmit = e =>{
+    const handleChange = (e) =>{
+        setValue(e.target.value)
+        
+    }
+    const handleSubmit = (e) =>{
         e.preventDefault();
-        console.log(e.target.name.value)
+        props.onSubmit(value)
     }
 
     
@@ -16,8 +22,8 @@ const Banner = () => {
                     <h1 className="mb-10 text-5xl font-bold text-[#0B0B0B]">I Grow By Helping People In Need</h1>
 
                     <form onSubmit={handleSubmit} className="flex justify-center rounded">
-                        <input className="pl-3 py-1 rounded border" type="text" name="name" placeholder="Search here...."/>
-                        <input className="btn bg-[#FF444A] round text-white hover:text-black" type="submit" value="search " />
+                        <input onChange={handleChange} className="pl-3 py-1 rounded border text-gray-400" type="text" name="name" placeholder="Search here...."/>
+                        <button type="submit" className="btn bg-[#FF444A] round text-white hover:text-black">Search</button>
                     </form>
                 </div>
             </div>

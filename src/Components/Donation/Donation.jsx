@@ -8,8 +8,8 @@ const Donation = () => {
 
     const [donations, setDonations] = useState([]);
     const [noFound, setNoFound] = useState(false)
-    const [dataLength, setDataLength] = useState(4)
-
+    const [isShow, setIsShow] = useState(false)
+  
     useEffect(() => {
         const donationItem = JSON.parse(localStorage.getItem('donation'))
 
@@ -23,6 +23,7 @@ const Donation = () => {
     }, [])
 
     // console.log(donations)
+    console.log(isShow)
 
 
     return (
@@ -32,14 +33,17 @@ const Donation = () => {
                     <>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-20 mx-10 md:mx-32">
                             {
-                                donations.slice(0, dataLength).map(item => <DonationCart key={item.id} item={item}></DonationCart>)
+                                isShow ? donations.map(item => <DonationCart key={item.id} item={item}></DonationCart>) : 
+                                donations.slice(0, 4).map(item => <DonationCart key={item.id} item={item}></DonationCart>)
                             }
 
                         </div>
-                        <div className={`flex justify-center items-center p-4  ${dataLength === donations.length ? 'hidden' : ''}`}>
+                        <div className={`flex justify-center items-center p-4 ${isShow ? 'hidden' : ''} `}>
+                            {donations.length > 4 && 
                             <button
-                                onClick={() => setDataLength(donations.length)}
-                                className="btn bg-[#009444] text-white normal-case hover:text-black">See All</button>
+                                onClick={()=> setIsShow(!isShow)}
+                                className="btn bg-[#009444] text-white normal-case hover:text-black">{!isShow ? "See All" : '' }</button>
+                                }
                         </div>
                     </>
             }
@@ -48,3 +52,4 @@ const Donation = () => {
 };
 
 export default Donation;
+
